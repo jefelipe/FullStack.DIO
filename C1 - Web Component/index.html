@@ -9,25 +9,20 @@
     <script src="src/components/TituloDinamico.js" defer></script>
   </head>
   <body>
-    <div class="card">
-      <div class="cardLeft">
-        <span>Jean Felipe</span>
-        <h1>Tony Stark desenvolve nova armadura</h1>
-        <p>A nova armadura de Nano Tecnologia do Tony Stark é incrível.</p>
-      </div>
-      <div class="cardRight">
-        <img src="img/iron_man_marvel_d9ce0209.jpeg" alt="Homem de Ferro" />
-      </div>
-    </div>
+    <div class="app-root">
+      <card-news
+        autor="jean"
+        title="Tony Stark desenvolve nova armadura"
+        link-url="www.google.com"
+        photo="img\iron_man_marvel_d9ce0209.jpeg"
+        content="A nova armadura de Nano Tecnologia do Tony Stark é incrível."
+      ></card-news>
 
-    <card-news 
-    autor="jean"
-    title="Tony Stark desenvolve nova armadura"
-    link-url="www.google.com"
-    photo="img\iron_man_marvel_d9ce0209.jpeg"
-    content="A nova armadura de Nano Tecnologia do Tony Stark é incrível."
-    
-    > 
-  </card-news>
+      <card-news
+        title="Homem aranha adiquire novo poder"
+        link-url="www.google.com"
+        content="O novo poder do Homem aranha, sim ele está mais poderoso do que nunca"
+      ></card-news>
+    </div>
   </body>
 </html>

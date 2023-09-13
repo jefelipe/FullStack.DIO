@@ -55,9 +55,60 @@ class Cardnews extends HTMLElement {
         return componentRoot; // Retorna o elemento raiz construído
     }
 
-    // Função para aplicar estilos ao componente (vazia neste exemplo)
+    // Função para aplicar estilos ao componente 
     styles() {
-        // Aqui você pode adicionar código para aplicar estilos ao componente
+        const style = document.createElement("style")
+        style.textContent = `
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            border-radius: 3px;
+        }
+        
+        .card {
+            width: 950px;
+            -webkit-box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.8);
+            box-shadow: 3px 3px 8px 0px rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            border-radius: 3px;
+            margin-bottom: 20px;
+        }
+        
+        
+        .cardRight {
+            width: 300px;
+            height: 200px;
+        }
+        
+        .cardLeft {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-left: 10px;
+        }
+        
+        .cardLeft span {
+            font-weight: 400;
+        }
+        
+        
+        .cardLeft > a {
+            margin-top: 15px;
+            font-size: 30px;
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .cardLeft p {
+            color: gray;
+        }
+        `
+
+        return style;
     }
 }
 
